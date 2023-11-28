@@ -3,3 +3,43 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.container {
+    width: 80%;
+
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: orange;
+
+}
+
+header>.container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+header>.container>* {
+    flex-basis: 200px;
+    padding: 10px;
+}
+
+.header-nav ul {
+    list-style: none;
+
+}
+
+.header-nav li {
+    display: inline-block;
+}
+
+.header-logo {}
