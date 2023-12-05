@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Boolando</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -22,10 +25,23 @@
                 </ul>
             </div>
             <div class="header-logo">
-                <img src="./img/boolean-logo.png" alt="">
+                <img src="./img/boolean-logo.png" alt="" class="logo">
             </div>
             <div class="heder-icons">
                 <!-- qui inserisco 3 icone -->
+                <ul>
+                    <li>
+                        <i class="fa-solid fa-user"></i>
+                    </li>
+
+                    <li>
+                        <i class="fa-regular fa-heart"></i>
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-bag-shopping"></i>
+                    </li>
+                </ul>
 
 
             </div>
@@ -35,12 +51,179 @@
 
     <!-- il main avrà un contenitore con 6 card che cambiano img quando il cursore passa sull'hover -->
     <main>
+        <section class="cards">
+            <div class="container">
+                <div class="card">
+                    <div class="card-top">
+
+                        <img src="./img/1.webp" alt="" class="front-img">
+                        <img src="./img/1b.webp" alt="" class="back-img">
+
+                        <div class="heart">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+
+                        <div class="labels">
+                            <span class="label danger">-50%</span>
+                            <span class="label success">Sostenibilità</span>
+
+                        </div>
+
+                    </div>
+                    <!-- descrizione -->
+                    <div class="description">
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-top">
+
+                        <img src="./img/2.webp" alt="" class="front-img">
+                        <img src="./img/2b.webp" alt="" class="back-img">
+
+                        <div class="heart">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+
+                        <div class="labels">
+                            <span class="label danger">-50%</span>
+                            <span class="label success">Sostenibilità</span>
+
+                        </div>
+
+                    </div>
+                    <!-- descrizione -->
+                    <div class="description">
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-top">
+
+                        <img src="./img/3.webp" alt="" class="front-img">
+                        <img src="./img/3b.webp" alt="" class="back-img">
+
+                        <div class="heart">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+
+                        <div class="labels">
+                            <span class="label danger">-50%</span>
+                            <span class="label success">Sostenibilità</span>
+
+                        </div>
+
+                    </div>
+                    <!-- descrizione -->
+                    <div class="description">
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-top">
+
+                        <img src="./img/4.webp" alt="" class="front-img">
+                        <img src="./img/4b.webp" alt="" class="back-img">
+
+                        <div class="heart">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+
+                        <div class="labels">
+                            <span class="label danger">-50%</span>
+                            <span class="label success">Sostenibilità</span>
+
+                        </div>
+
+                    </div>
+                    <!-- descrizione -->
+                    <div class="description">
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-top">
+
+                        <img src="./img/5.webp" alt="" class="front-img">
+                        <img src="./img/5b.webp" alt="" class="back-img">
+
+                        <div class="heart">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+
+                        <div class="labels">
+                            <span class="label danger">-50%</span>
+                            <span class="label success">Sostenibilità</span>
+
+                        </div>
+
+                    </div>
+                    <!-- descrizione -->
+                    <div class="description">
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-top">
+
+                        <img src="./img/6.webp" alt="" class="front-img">
+                        <img src="./img/6b.webp" alt="" class="back-img">
+
+                        <div class="heart">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+
+                        <div class="labels">
+                            <span class="label danger">-50%</span>
+                            <span class="label success">Sostenibilità</span>
+
+                        </div>
+
+                    </div>
+                    <!-- descrizione -->
+                    <div class="description">
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
 
 
     </main>
 
     <footer>
         <!-- nel footer avrò una lista di link e le icone social -->
+
+        <div class="info">
+            <div>
+                Boolando srl
+            </div>
+            <ul>
+                <li><a href="#">Informativa sulla privacy</a></li>
+                <li><a href="#">Informazioni legali</a></li>
+                <li><a href="#">Diritto di recesso</a></li>
+            </ul>
+        </div>
+
+        <div class="social">
+            <div>
+                Trovaci anche su
+            </div>
+
+            <ul>
+                <li><i class="fa-brands fa-facebook"></i></li>
+                <li><i class="fa-brands fa-facebook"></i></li>
+                <li><i class="fa-brands fa-facebook"></i></li>
+                <li><i class="fa-brands fa-facebook"></i></li>
+            </ul>
+        </div>
 
 
     </footer>

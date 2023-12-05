@@ -4,10 +4,45 @@
     box-sizing: border-box;
 }
 
+
+/* utils */
+
 .container {
-    width: 80%;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
 
 }
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: inline-block;
+    margin: 0 .25rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/* debug */
+
+.debug {
+    background-color: grey;
+    padding: 1rem;
+    min-height: 80px;
+}
+
+
+/* header */
 
 header {
     position: sticky;
@@ -17,29 +52,102 @@ header {
 
     justify-content: center;
     align-items: center;
-    height: 100px;
+    height: 50px;
     background-color: orange;
+    color: white;
+    margin-bottom: 2rem;
 
 }
 
 header>.container {
     display: flex;
-    align-items: center;
-    height: 100%;
-}
-
-header>.container>* {
-    flex-basis: 200px;
-    padding: 10px;
-}
-
-.header-nav ul {
-    list-style: none;
+    justify-content: space-between;
 
 }
 
-.header-nav li {
+
+.logo {
+    height: 35px;
+}
+
+
+
+
+/* main */
+
+.cards>.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.card {
+    width: 30%;
+    min-width: 200px;
+    flex-grow: 1;
+}
+
+.card .back-img {
+    display: none;
+}
+
+.card:hover .back-img {
+    display: block;
+}
+
+.card:hover .front-img {
+    display: none;
+}
+
+.card-top {
+    position: relative;
+}
+
+.card-top .heart {
+    position: absolute;
+    top: 1rem;
+    right: 0;
+
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    background-color: white;
+}
+
+.card-top .heart:hover {
+    color: red;
+}
+
+.card-top .labels {
+    position: absolute;
+    bottom: 20px;
+}
+
+.label {
     display: inline-block;
+    padding: 5px 10px;
+    font-size: 1rem;
+    color: white;
 }
 
-.header-logo {}
+.label.danger {
+    background-color: red;
+}
+
+.label.success {
+    background-color: green;
+}
+
+
+/* footer */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+    color: white;
+    background-color: black;
+    height: 50px;
+}
